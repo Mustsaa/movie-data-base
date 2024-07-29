@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif; 
+    color: white;
+    background: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: url('background.png') no-repeat center center/cover; 
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif; 
+}
+
+button:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#empty-watchlist {
+    text-align: center;
+    margin-top: 100px; 
+}
+
+#empty-watchlist p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+#add-movies {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+#add-movies::before {
+    content: "\002B"; 
+    margin-right: 10px;
+}
+
+#watchlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.movie {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    max-width: 150px;
+    border: 1px solid #555;
+}
+
+.movie h2 {
+    margin: 10px 0 5px;
+}
+
+.movie p {
+    margin: 0 0 10px;
+}
+
+.movie button {
+    background-color: #555;
+}
